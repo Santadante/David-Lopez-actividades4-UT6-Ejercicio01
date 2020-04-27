@@ -1,7 +1,7 @@
 function gestionarFicheroXML(xmlDoc){
 	
 	alert(xmlDoc.getElementsByTagName('nombre')[0].firstChild.nodeValue) // 80 mundos
-	alert(xmlDoc.getElementsByTagName('libro')[0].childNodes[2].firstChild.nodeValue)
+	alert(xmlDoc.getElementsByTagName('libro')[0].childNodes[1].firstChild.nodeValue)
 	alert(xmlDoc.getElementsByTagName('libro')[0].childNodes[2]) // titulo libro
 
 	document.getElementById('ficheroXML').innerHTML += "<b>" + 
