@@ -9,9 +9,9 @@ function gestionarFicheroXML(xmlDoc){
 		cogerDiv.className = "tabla";
 		cogerDiv.className = "fila";
 		cogerDiv.className = "celda";
-		cogerDiv.innerHTML += tit[i].firstChild.nodeValue + "<br>";
+		cogerDiv.innerHTML += tit[i].firstChild.nodeValue;
 		cogerDiv.className = "celda";
-		cogerDiv.innerHTML += aut[i].firstChild.nodeValue + "<br>";
+		cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
 		if(valor < 25)
 			cogerDiv.className = "azul";
 		else
