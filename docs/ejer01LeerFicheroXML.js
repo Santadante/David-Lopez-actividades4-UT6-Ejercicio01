@@ -5,7 +5,7 @@ function gestionarFicheroXML(xmlDoc){
 	alert(xmlDoc.getElementsByTagName('libro')[0].childNodes[2]) // titulo libro
 
 	document.getElementById('ficheroXML').innerHTML += "<b>" + 
-	xmlDoc.getElementsByTagName('libro')[0].childNodes[1].firstChild.nodeValue.textContent + "</b>"
+	xmlDoc.getElementsByTagName('libro')[0].childNodes[2].firstChild.nodeValue.textContent + "</b>"
 	
 }
 
