@@ -1,9 +1,17 @@
 function gestionarFicheroXML(xmlDoc){
-	let tit = xmlDoc.getElementsByTagName('titulo')[0].firstChild.nodeValue;
-	let aut = xmlDoc.getElementsByTagName('autor')[0].firstChild.nodeValue;
+	let tit = xmlDoc.getElementsByTagName('titulo');
+	let aut = xmlDoc.getElementsByTagName('autor');
+	let valor = xmlDoc.getElementsByTagName('precio');
+	let cogerDiv = document.getElementById('ficheroXML');
 
-	document.getElementById('ficheroXML').innerHTML += "<b>" + 
-	tit + "</b>" + aut
+	for(let i = 0; i < tit.length; i++)
+	{
+		cogerDiv.className = "tabla";
+		cogerDiv.innerHTML += tit[i].firstChild.nodeValue + "<br>";
+		
+	}
+	/*document.getElementById('ficheroXML').innerHTML += "<b>" + 
+	tit + "</b>" + aut*/
 	
 }
 

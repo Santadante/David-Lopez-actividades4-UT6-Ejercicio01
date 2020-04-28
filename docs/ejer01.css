@@ -1,0 +1,21 @@
+.tabla
+{
+    display: table;
+}
+.fila
+{
+    display: table-row;
+}
+.columna
+{
+    display: table-cell;
+    padding: 12px;
+}
+.azul
+{
+    background-color: rgb(18, 99, 221);
+}
+.verde
+{
+    background-color: rgb(2, 145, 57);
+}
