@@ -9,13 +9,13 @@
 	{
 		cogerDiv.className = "fila";
 		cogerDiv.className = "celda";
-		cogerDiv.innerHTML = tit[i].firstChild.nodeValue;
+		cogerDiv.innerHTML += tit[i].firstChild.nodeValue;
 		cogerDiv.className = "celda";
 		cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
-		if(valor[i].nodeValue < 25)
+		/*if(valor[i].nodeValue < 25)
 			cogerDiv.className = "azul";
 		else
-			cogerDiv.className = "verde";
+			cogerDiv.className = "verde";*/
 	}
 	/*document.getElementById('ficheroXML').innerHTML += "<b>" + 
 	tit + "</b>" + aut*/
