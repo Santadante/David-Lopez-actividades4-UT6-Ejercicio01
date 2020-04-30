@@ -6,11 +6,11 @@ function gestionarFicheroXML(xmlDoc){
 
 	for(let i = 0; i < tit.length; i++)
 	{
-		cogerDiv.className = "tabla";
-		cogerDiv.className = "fila";
-		cogerDiv.className = "celda";
+		cogerDiv.className += "tabla";
+		cogerDiv.className += "fila";
+		cogerDiv.className += "celda";
 		cogerDiv.innerHTML = tit[i].firstChild.nodeValue;
-		cogerDiv.className = "celda";
+		cogerDiv.className += "celda";
 		cogerDiv.innerHTML = aut[i].firstChild.nodeValue;
 		if(valor < 25)
 			cogerDiv.className = "azul";
