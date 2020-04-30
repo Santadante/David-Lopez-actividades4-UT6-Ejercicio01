@@ -1,19 +1,17 @@
  function gestionarFicheroXML(xmlDoc){
 	let tit = xmlDoc.getElementsByTagName('titulo');
 	let aut = xmlDoc.getElementsByTagName('autor');
-	let valor = xmlDoc.getElementsByTagName('precio');
-	let añadirDiv = document.createElement('div');
+	let valor = xmlDoc.getElementsByTagName('precio');	
 	let cogerDiv = document.querySelector("#ficheroXML"); //seleccionó el div
 	cogerDiv.className = "tabla"; // creo la tabla con la clase css
+	let añadirFila = document.createElement("p");
 
 	
 	for(let i = 0; i < tit.length; i++)
 	{
-		
-		añadirDiv.className = "fila";
+		cogerDiv.appendChild(añadirFila);
 		//cogerDiv.className = "celda";
-		añadirDiv.innerHTML += tit[i].firstChild.nodeValue;
-		cogerDiv.appendChild(añadirDiv);
+		añadirFila.innerHTML += tit[i];	
 		//cogerDiv.className = "celda";
 		//cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
 		/*if(valor[i].nodeValue < 25)
