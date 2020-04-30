@@ -18,7 +18,7 @@
 		var textoCeldaIzq = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
 		añadirCelda.appendChild(textoCeldaIzq); // añado el texto
 		
-		let añadirCelda = document.createElement("div"); //declaro la segunda celda
+		añadirCelda = document.createElement("div"); //declaro la segunda celda
 		añadirFila.appendChild(añadirCelda); // añado segunda celda a la fila
 		añadirCelda.className = "celda"; // le meto el display a la celda
 		var textoCeldaDer = document.createTextNode(aut[i].firstChild.nodeValue); //declaro el texto
