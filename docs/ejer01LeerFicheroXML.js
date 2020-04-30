@@ -13,21 +13,19 @@
 		cogerDiv.appendChild(añadirFila);
 		añadirFila.className = "fila";
 
-		añadirFila.appendChild(añadirCelda);
+		/*añadirFila.appendChild(añadirCelda);
 		añadirFila.className = "celda";
 		añadirCelda.innerHTML += tit[i].firstChild.nodeValue;	
 
 		añadirFila.appendChild(añadirCelda);
 		añadirFila.className = "celda";
-		añadirCelda.innerHTML += aut[i].firstChild.nodeValue;
-		
+		añadirCelda.innerHTML += aut[i].firstChild.nodeValue;*/
+
 		/*if(valor[i].nodeValue < 25)
 			cogerDiv.className = "azul";
 		else
 			cogerDiv.className = "verde";*/
 	}
-	/*document.getElementById('ficheroXML').innerHTML += "<b>" + 
-	tit + "</b>" + aut*/
 	
 }
 
