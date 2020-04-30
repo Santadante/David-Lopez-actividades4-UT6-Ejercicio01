@@ -16,13 +16,13 @@
 		añadirFila.appendChild(añadirCelda); // añado primera celda a la fila
 		añadirCelda.className = "celda"; // le meto el display a la celda
 		var textoCeldaIzq = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
-		añadirCelda.appendChild(textoCeldaIzq); // añado el texto
+		añadirCelda.append(textoCeldaIzq); // añado el texto
 		
 		añadirCelda = document.createElement("div"); //declaro la segunda celda
 		añadirFila.appendChild(añadirCelda); // añado segunda celda a la fila
 		añadirCelda.className = "celda"; // le meto el display a la celda
 		var textoCeldaDer = document.createTextNode(aut[i].firstChild.nodeValue); //declaro el texto
-		añadirCelda.appendChild(textoCeldaDer); // añado el texto
+		añadirCelda.append(textoCeldaDer); // añado el texto
 
 		if(valor[i].firstChild.nodeValue < 25)
 			cogerDiv.id = "azul";
