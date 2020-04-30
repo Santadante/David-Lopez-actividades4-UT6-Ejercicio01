@@ -2,12 +2,12 @@
 	let tit = xmlDoc.getElementsByTagName('titulo');
 	let aut = xmlDoc.getElementsByTagName('autor');
 	let valor = xmlDoc.getElementsByTagName('precio');
-	let cogerDiv = document.querySelector("#ficheroXML");
-	cogerDiv.className = "tabla";
+	let cogerDiv = document.querySelector("#ficheroXML"); //seleccionó el div
+	cogerDiv.className = "tabla"; // creo la tabla con la clase css
 	
 	for(let i = 0; i < tit.length; i++)
 	{
-		cogerDiv.appendChild.className = "fila";
+		cogerDiv.appendChild = "fila";
 		//cogerDiv.className = "fila";
 		//cogerDiv.className = "celda";
 		cogerDiv.innerHTML += tit[i].firstChild.nodeValue;
