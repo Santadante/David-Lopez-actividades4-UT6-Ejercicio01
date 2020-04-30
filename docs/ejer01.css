@@ -1,6 +1,8 @@
 .tabla
 {
     display: table;
+    border: solid 2px black;
+    padding: 5px;
 }
 .fila
 {
