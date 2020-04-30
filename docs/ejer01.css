@@ -8,6 +8,10 @@
 {
     display: table-row;
 }
+.celda
+{
+    display:table-cell;
+}
 .columna
 {
     display: table-cell;
