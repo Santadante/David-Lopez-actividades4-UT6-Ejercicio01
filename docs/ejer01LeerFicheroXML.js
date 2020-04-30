@@ -17,7 +17,7 @@
 
 		añadirFila.appendChild(añadirCelda);
 		añadirCelda.className = "celda";
-		añadirCelda.innerText = tit[i].firstChild.nodeValue;	
+		añadirCelda.innerText += tit[i].firstChild.nodeValue;	
 
 		/*añadirFila.appendChild(añadirCelda);
 		añadirFila.className = "celda";
