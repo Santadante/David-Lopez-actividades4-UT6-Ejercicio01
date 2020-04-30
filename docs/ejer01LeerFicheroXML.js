@@ -9,10 +9,10 @@
 	{
 		cogerDiv.className = "fila";
 		cogerDiv.className = "celda";
-		cogerDiv.innerHTML += tit[i].firstChild.nodeValue;
+		cogerDiv.innerHTML += tit[i].nodeValue;
 		cogerDiv.className = "celda";
-		cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
-		if(valor < 25)
+		cogerDiv.innerHTML += aut[i].nodeValue;
+		if(valor[i].nodeValue < 25)
 			cogerDiv.className = "azul";
 		else
 			cogerDiv.className = "verde";
