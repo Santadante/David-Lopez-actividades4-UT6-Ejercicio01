@@ -2,21 +2,21 @@ function gestionarFicheroXML(xmlDoc){
 	let tit = xmlDoc.getElementsByTagName('titulo');
 	let aut = xmlDoc.getElementsByTagName('autor');
 	let valor = xmlDoc.getElementsByTagName('precio');
-	let cogerDiv = document.getElementById('ficheroXML');
+	let cogerDiv = document.getElementById("ficheroXML");
 
 	for(let i = 0; i < tit.length; i++)
 	{
-		cogerDiv.className += "tabla";
-		cogerDiv.className += "fila";
-		cogerDiv.className += "celda";
+		cogerDiv.className = "tabla";
+		/*cogerDiv.className = "fila";
+		cogerDiv.className = "celda";
 		cogerDiv.innerHTML = tit[i].firstChild.nodeValue;
-		cogerDiv.className += "celda";
+		cogerDiv.className = "celda";
 		cogerDiv.innerHTML = aut[i].firstChild.nodeValue;
 		if(valor < 25)
 			cogerDiv.className = "azul";
 		else
 			cogerDiv.className = "verde";
-		cogerDiv.className = "fila";
+		cogerDiv.className = "fila";*/
 		
 	}
 	/*document.getElementById('ficheroXML').innerHTML += "<b>" + 
