@@ -7,6 +7,7 @@
 	
 	for(let i = 0; i < tit.length; i++)
 	{
+		cogerDiv.appendChild.className = "fila";
 		//cogerDiv.className = "fila";
 		//cogerDiv.className = "celda";
 		cogerDiv.innerHTML += tit[i].firstChild.nodeValue;
