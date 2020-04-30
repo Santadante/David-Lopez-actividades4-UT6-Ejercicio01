@@ -2,9 +2,9 @@
 	let tit = xmlDoc.getElementsByTagName('titulo');
 	let aut = xmlDoc.getElementsByTagName('autor');
 	let valor = xmlDoc.getElementsByTagName('precio');
-	let cogerDiv = document.querySelectorAll("#ficheroXML");
+	let cogerDiv = document.querySelector("#ficheroXML");
 	cogerDiv.className = "tabla";
-
+	
 	for(let i = 0; i < tit.length; i++)
 	{
 		
