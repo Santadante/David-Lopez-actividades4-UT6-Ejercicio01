@@ -18,11 +18,11 @@
 		var textoCeldaIzq = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
 		añadirCelda.append(textoCeldaIzq); // añado el texto
 		
-		añadirCelda = document.createElement("div"); //declaro la segunda celda
-		añadirFila.appendChild(añadirCelda); // añado segunda celda a la fila
-		añadirCelda.className = "celda"; // le meto el display a la celda
+		let añadirOtraCelda = document.createElement("div"); //declaro la segunda celda
+		añadirFila.appendChild(añadirOtraCelda); // añado segunda celda a la fila
+		añadirOtraCelda.className = "celda"; // le meto el display a la celda
 		var textoCeldaDer = document.createTextNode(aut[i].firstChild.nodeValue); //declaro el texto
-		añadirCelda.append(textoCeldaDer); // añado el texto
+		añadirOtraCelda.append(textoCeldaDer); // añado el texto
 
 		if(valor[i].firstChild.nodeValue < 25)
 			cogerDiv.id = "azul";
