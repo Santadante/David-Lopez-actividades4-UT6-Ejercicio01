@@ -4,16 +4,23 @@
 	let valor = xmlDoc.getElementsByTagName('precio');	
 	let cogerDiv = document.querySelector("#ficheroXML"); //seleccionó el div
 	cogerDiv.className = "tabla"; // creo la tabla con la clase css
-	let añadirFila = document.createElement("p");
+	let añadirFila = document.createElement("div");
+	let añadirCelda = document.createElement("div");
 
 	
 	for(let i = 0; i < tit.length; i++)
 	{
 		cogerDiv.appendChild(añadirFila);
-		//cogerDiv.className = "celda";
-		añadirFila.innerHTML += tit[i].firstChild.nodeValue;	
-		//cogerDiv.className = "celda";
-		//cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
+		añadirFila.className = "fila";
+
+		añadirFila.appendChild(añadirCelda);
+		añadirFila.className = "celda";
+		añadirCelda.innerHTML += tit[i].firstChild.nodeValue;	
+
+		añadirFila.appendChild(añadirCelda);
+		añadirFila.className = "celda";
+		añadirCelda.innerHTML += aut[i].firstChild.nodeValue;
+		
 		/*if(valor[i].nodeValue < 25)
 			cogerDiv.className = "azul";
 		else
