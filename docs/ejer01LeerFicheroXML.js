@@ -4,7 +4,7 @@
 	let valor = xmlDoc.getElementsByTagName('precio');
 	let cogerDiv = document.querySelector("#ficheroXML");
 	cogerDiv.className = "tabla";
-
+	console.log(cogerDiv);
 	for(let i = 0; i < tit.length; i++)
 	{
 		
