@@ -21,7 +21,7 @@
 		let añadirOtraCelda = document.createElement("div"); //declaro la segunda celda
 		añadirFila.appendChild(añadirOtraCelda); // añado segunda celda a la fila
 		añadirOtraCelda.className = "celda"; // le meto el display a la celda
-		var textoCeldaDer = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
+		var textoCeldaDer = document.createTextNode(aut[i].firstChild.nodeValue); //declaro el texto
 		añadirOtraCelda.appendChild(textoCeldaDer); // añado el texto
 
 		/*if(valor[i].nodeValue < 25)
