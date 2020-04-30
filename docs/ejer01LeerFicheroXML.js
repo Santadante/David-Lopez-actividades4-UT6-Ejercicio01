@@ -5,18 +5,7 @@
 	let cogerDiv = document.querySelector("#ficheroXML");
 	cogerDiv.className = "tabla";
 	
-	for(let i = 0; i < tit.length; i++)
-	{
-		cogerDiv.className = "fila";
-		cogerDiv.className = "celda";
-		cogerDiv.innerHTML += tit[i].firstChild.nodeValue;
-		cogerDiv.className = "celda";
-		cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
-		/*if(valor[i].nodeValue < 25)
-			cogerDiv.className = "azul";
-		else
-			cogerDiv.className = "verde";*/
-	}
+	
 	/*document.getElementById('ficheroXML').innerHTML += "<b>" + 
 	tit + "</b>" + aut*/
 	
