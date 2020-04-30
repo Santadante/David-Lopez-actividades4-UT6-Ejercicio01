@@ -13,11 +13,11 @@
 		cogerDiv.appendChild(añadirFila);
 		añadirFila.className = "fila";
 
-		/*añadirFila.appendChild(añadirCelda);
-		añadirFila.className = "celda";
+		añadirFila.appendChild(añadirCelda);
+		añadirCelda.className = "celda";
 		añadirCelda.innerHTML += tit[i].firstChild.nodeValue;	
 
-		añadirFila.appendChild(añadirCelda);
+		/*añadirFila.appendChild(añadirCelda);
 		añadirFila.className = "celda";
 		añadirCelda.innerHTML += aut[i].firstChild.nodeValue;*/
 
