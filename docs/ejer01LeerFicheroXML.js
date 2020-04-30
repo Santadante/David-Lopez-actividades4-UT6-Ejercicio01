@@ -11,7 +11,7 @@
 	{
 		cogerDiv.appendChild(añadirFila);
 		//cogerDiv.className = "celda";
-		añadirFila.innerHTML += tit[i].firstChild;	
+		añadirFila.innerHTML += tit[i].firstChild.nodeValue;	
 		//cogerDiv.className = "celda";
 		//cogerDiv.innerHTML += aut[i].firstChild.nodeValue;
 		/*if(valor[i].nodeValue < 25)
