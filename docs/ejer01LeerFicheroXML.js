@@ -5,23 +5,24 @@
 
 	let cogerDiv = document.querySelector("#ficheroXML"); //seleccionó el div
 	cogerDiv.className = "tabla"; // creo la tabla con la clase css
-
-	let añadirFila = document.createElement("div");
-	let añadirCelda = document.createElement("div");
-
 	
 	for(let i = 0; i < tit.length; i++)
 	{
+		let añadirFila = document.createElement("div");
 		cogerDiv.appendChild(añadirFila);
 		añadirFila.className = "fila";
 
-		añadirFila.appendChild(añadirCelda);
-		añadirCelda.className = "celda";
-		añadirCelda.innerText += tit[i].firstChild.nodeValue;	
-
-		/*añadirFila.appendChild(añadirCelda);
-		añadirFila.className = "celda";
-		añadirCelda.innerHTML += aut[i].firstChild.nodeValue;*/
+		let añadirCelda = document.createElement("div"); //declaro la primera celda
+		añadirFila.appendChild(añadirCelda); // añado primera celda a la fila
+		añadirCelda.className = "celda"; // le meto el display a la celda
+		var textoCeldaIzq = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
+		añadirCelda.appendChild(textoCeldaIzq); // añado el texto
+		
+		let añadirOtraCelda = document.createElement("div"); //declaro la segunda celda
+		añadirFila.appendChild(añadirOtraCelda); // añado segunda celda a la fila
+		añadirOtraCelda.className = "celda"; // le meto el display a la celda
+		var textoCeldaDer = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
+		añadirOtraCelda.appendChild(textoCeldaDer); // añado el texto
 
 		/*if(valor[i].nodeValue < 25)
 			cogerDiv.className = "azul";
