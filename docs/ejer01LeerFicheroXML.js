@@ -6,8 +6,8 @@ function gestionarFicheroXML(xmlDoc){
 
 	for(let i = 0; i < tit.length; i++)
 	{
-		cogerDiv.className = "tabla";
-		/*cogerDiv.className = "fila";
+		cogerDiv.classList.add("tabla");
+		cogerDiv.classList.add("fila");
 		cogerDiv.className = "celda";
 		cogerDiv.innerHTML = tit[i].firstChild.nodeValue;
 		cogerDiv.className = "celda";
@@ -16,7 +16,7 @@ function gestionarFicheroXML(xmlDoc){
 			cogerDiv.className = "azul";
 		else
 			cogerDiv.className = "verde";
-		cogerDiv.className = "fila";*/
+		cogerDiv.className = "fila";
 		
 	}
 	/*document.getElementById('ficheroXML').innerHTML += "<b>" + 
