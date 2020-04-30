@@ -13,11 +13,11 @@
     display: table-cell;
     padding: 12px;
 }
-.azul
+#azul
 {
     background-color: rgb(18, 99, 221);
 }
-.verde
+#verde
 {
     background-color: rgb(2, 145, 57);
 }

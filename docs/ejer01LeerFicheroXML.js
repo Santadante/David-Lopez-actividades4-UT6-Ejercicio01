@@ -18,16 +18,16 @@
 		var textoCeldaIzq = document.createTextNode(tit[i].firstChild.nodeValue); //declaro el texto
 		añadirCelda.appendChild(textoCeldaIzq); // añado el texto
 		
-		let añadirOtraCelda = document.createElement("div"); //declaro la segunda celda
-		añadirFila.appendChild(añadirOtraCelda); // añado segunda celda a la fila
-		añadirOtraCelda.className = "celda"; // le meto el display a la celda
+		let añadirCelda = document.createElement("div"); //declaro la segunda celda
+		añadirFila.appendChild(añadirCelda); // añado segunda celda a la fila
+		añadirCelda.className = "celda"; // le meto el display a la celda
 		var textoCeldaDer = document.createTextNode(aut[i].firstChild.nodeValue); //declaro el texto
-		añadirOtraCelda.appendChild(textoCeldaDer); // añado el texto
+		añadirCelda.appendChild(textoCeldaDer); // añado el texto
 
-		/*if(valor[i].nodeValue < 25)
-			cogerDiv.className = "azul";
+		if(valor[i].firstChild.nodeValue < 25)
+			cogerDiv.id = "azul";
 		else
-			cogerDiv.className = "verde";*/
+			cogerDiv.id = "verde";
 	}
 	
 }
