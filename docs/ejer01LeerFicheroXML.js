@@ -1,12 +1,13 @@
-function gestionarFicheroXML(xmlDoc){
+ function gestionarFicheroXML(xmlDoc){
 	let tit = xmlDoc.getElementsByTagName('titulo');
 	let aut = xmlDoc.getElementsByTagName('autor');
 	let valor = xmlDoc.getElementsByTagName('precio');
 	let cogerDiv = document.getElementById("ficheroXML");
-
+	cogerDiv.className = "tabla";
+	
 	for(let i = 0; i < tit.length; i++)
 	{
-		cogerDiv.className = "tabla";
+		
 		cogerDiv.className = "fila";
 		cogerDiv.className = "celda";
 		cogerDiv.innerHTML = tit[i].firstChild.nodeValue;
