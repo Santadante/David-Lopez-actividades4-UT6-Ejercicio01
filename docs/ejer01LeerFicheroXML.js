@@ -25,9 +25,16 @@
 		añadirOtraCelda.append(textoCeldaDer); // añado el texto
 
 		if(valor[i].firstChild.nodeValue < 25)
-			cogerDiv.id = "azul";
+		{
+			añadirCelda.id = "azul"
+			añadirOtraCelda.id = "azul";
+		}
 		else
-			cogerDiv.id = "verde";
+		{
+			añadirCelda.id = "verde"
+			añadirOtraCelda.id = "verde";
+		}
+		
 	}
 	
 }
