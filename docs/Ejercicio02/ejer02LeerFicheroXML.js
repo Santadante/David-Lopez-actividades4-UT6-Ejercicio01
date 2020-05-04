@@ -1,5 +1,5 @@
  function gestionarFicheroTXT(txtDoc){
-    let texto = new FileReader();
+    let texto = new FileReader(txtDoc);
     for (var i = 0; i < texto.length; i++) {
         //texto[i] = texto[i].trim();
         console.log(texto[i]);
