@@ -5,6 +5,10 @@ body
     justify-content: center;
     width: 70%;
 }
+.libros
+{
+    text-align: center;
+}
 .tabla
 {
     display: table;
