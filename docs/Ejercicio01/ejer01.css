@@ -3,6 +3,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 12%;
     width: 70%;
 }
 .libros
