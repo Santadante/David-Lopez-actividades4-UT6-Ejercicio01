@@ -1,5 +1,5 @@
  function gestionarFicheroTXT(txtDoc){
-	let tit = txtDoc.getElementsByTagName('titulo');
+	
 	
 }
 
