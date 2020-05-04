@@ -11,6 +11,10 @@ function loadLDocA(fichero,tipo)
                 gestionarFicheroXML(http.responseXML)
             }
             else
-			    gestionarFicheroTXT(http.responseText)
+            {
+                var allText = gestionarFicheroTXT(http.responseText)
+                alert(allText);
+            }
+			    
 		}})
 }
