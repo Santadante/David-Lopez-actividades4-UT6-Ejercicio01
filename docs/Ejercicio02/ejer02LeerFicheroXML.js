@@ -1,7 +1,7 @@
  function gestionarFicheroTXT(txtDoc){
     let texto = txtDoc.document;
     for (var i = 0; i < texto.length; i++) {
-        //names[i] = names[i].trim();
+        texto[i] = texto[i].trim();
         console.log(texto[i]);
      }
 }
