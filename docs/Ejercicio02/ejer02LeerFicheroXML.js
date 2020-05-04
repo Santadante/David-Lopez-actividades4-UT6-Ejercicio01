@@ -1,5 +1,5 @@
  function gestionarFicheroTXT(txtDoc){
-    let fs = require("fs");
+    let fs = require(txtDoc);
     let text = fs.readFileSync("./dancers.txt");
     let textByLine = text.split("\n")
     let names = read("dancers.txt").split("\n"); 
