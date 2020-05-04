@@ -1,5 +1,5 @@
- function gestionarFicheroTXT(txtDoc){
-	var names = read(txtDoc).split("\n"); 
+ function gestionarFicheroXML(xmlDoc){
+	var names = read(xmlDoc).split("\n"); 
     for (var i = 0; i < names.length; i++) {
           //names[i] = names[i].trim();
           console.log(names[i]);

@@ -6,7 +6,7 @@ function loadLDocA(fichero,tipo)
     http.send();
     http.addEventListener('load', (event) => {  //Cuando se reciba la respuesta, se ejecuta esta función
         if(http.status === 200) {
-            if(tipo == "xml")
+            if(tipo == "txt")
             {
                 gestionarFicheroXML(http.responseXML)
             }
